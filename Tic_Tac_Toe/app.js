@@ -2,6 +2,7 @@ $(() => {
 //turn counter
 let turn = 1;
 let count = 0;
+
 $('td').click(function() {
 
 var $class = $(this).attr("class");
@@ -61,15 +62,15 @@ const whoWins = (classShape,player) => {
      $('.message').text(player + " wins");
    } else if (count == 9) {
      $('.message').text('It is a tie');
-   } else {}
-
-
-
-
-
-
-
+   }
 
 }
-
+function reset () {
+  turn = 1;
+  count = 0;
+  $('.cross').text('').removeClass('cross').addClass('square');
+  $('.circle').text('').removeClass('circle').addClass('square');
+  $('.message').text('Player 1\'s turn');
+}
+$('#resetButton').on('click',reset);
 });
