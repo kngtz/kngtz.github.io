@@ -1,0 +1,28 @@
+body {
+  font-family:"Roboto", Arial, sans-serif;
+  margin:0 auto;
+  text-align:center;
+  margin-top:50px;
+}
+
+body table {
+  border-collapse: collapse;
+  width: 310px;
+  margin: 0 auto;
+}
+body table td {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #555;
+  cursor: pointer;
+}
+
+.cross {
+  background-color: red;
+  font-size: 50px;
+}
+
+.circle {
+  background-color: blue;
+  font-size: 50px; 
+}
