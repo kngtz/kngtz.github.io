@@ -24,7 +24,7 @@ let faceArray = ['Images/Bahu/0.png','Images/Bahu/1.png','Images/Bahu/2.png','Im
 let layerCount = 1;
 let totalOrder = 0;
 let sideOrder = [];
-let timer = 0;
+let timer = 12;
 var interval;
 
 
@@ -36,7 +36,7 @@ function updateData () {
    youLose();
   $('#sideOrder1').attr('src',imageArray[checkLayerImage(sideOrder[0])])
   $('#sideOrder2').attr('src',imageArray[checkLayerImage(sideOrder[1])])
-
+  $('#Timer').text('Time Left = ' + timer);
 
   // $('#sideOrder2').attr('src',checkLayerImage(sideOrder[1]))
   checkCookedPatties();
