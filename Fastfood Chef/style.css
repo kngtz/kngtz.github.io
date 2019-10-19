@@ -1,0 +1,85 @@
+body {
+  font-family:"Roboto", Arial, sans-serif;
+  margin:0 auto;
+  text-align:center;
+  margin-top:50px;
+}
+.container {
+  background-color: grey;
+}
+
+
+.col {
+  text-align: center;
+  border: 0.5rem outset black;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+ul {
+  display: flex;
+}
+.list-group-item{
+  margin: -2px;
+  padding: 0rem;
+  background-color: rgba(0,0,255,0);
+  border: 0;
+}
+
+#grill {
+  background-color: grey;
+
+}
+
+.table td, .table th {
+  border-top:0px;
+}
+
+.burgerGrid {
+  position: absolute;
+  bottom:5px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+
+.whiteBar{
+  background-color: white;
+}
+
+#faceTile{
+  min-height: 70%;
+  max-height:70%;
+  max-width: 70%;
+}
+
+#blankSpace{
+  min-height: 70%;
+  max-height:70%;
+  max-width: 70%;
+}
+
+#nine{
+  border-top :0.2rem solid brown;
+  border-bottom :0.2rem solid brown;
+  border-left :0.2rem solid brown;
+  border-right :0;
+}
+
+#ten{
+  border-top :0.2rem solid brown;
+  border-bottom :0.2rem solid brown;
+  border-right :0.2rem solid brown;
+  border-left :0;
+}
+
+
+.sadCup {
+  max-height: 160px;
+}
+
+.happyCup{
+  max-height: 160px;
+}

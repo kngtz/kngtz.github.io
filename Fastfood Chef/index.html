@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Fastfood Chef</title>
+  </head>
+  <body>
+
+    <div class="container">
+    <div class="row whiteBar">
+      <div class="col-sm">
+          <p id = "posScore">Score : 0</p>
+      </div>
+      <div class="col-sm">
+          <h1 id = "Timer">Time left : </h1>
+      </div>
+      <div class="col-sm">
+        <p id = 'negScore'>Wrong Orders : 0</p>
+      </div>
+    </div>
+  </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <ul class="list-group burgerGrid" id ='myBurger'>
+            <li class="list-group-item">
+             <img src="" class = 'img-fluid'>
+            </li>
+            <li class="list-group-item">
+             <img src="" class = 'img-fluid'>
+            </li>
+            <li class="list-group-item">
+             <img src="" class = 'img-fluid'>
+            </li>
+            <li class="list-group-item">
+             <img src="" class = 'img-fluid'>
+            </li>
+            <li class="list-group-item">
+             <img src="" class = 'img-fluid'>
+            </li>
+            <li class="list-group-item">
+             <img src="" class = 'img-fluid'>
+            </li>
+            <li class="list-group-item">
+             <img src="" class = 'img-fluid'>
+            </li>
+            <li class="list-group-item">
+             <img src="" class = 'img-fluid'>
+            </li>
+            <li class="list-group-item">
+             <img src="" class = 'img-fluid'>
+            </li>
+            <li class="list-group-item">
+             <img src="" class = 'img-fluid'>
+            </li>
+            <li class="list-group-item">
+             <img src="" class = 'img-fluid'>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul class="list-group burgerGrid" id ='orderBurger'>
+            <li class="list-group-item">
+             <img src="" class = 'img-fluid'>
+            </li>
+            <li class="list-group-item">
+             <img src="" class = 'img-fluid'>
+            </li>
+            <li class="list-group-item">
+             <img src="" class = 'img-fluid'>
+            </li>
+            <li class="list-group-item">
+             <img src="" class = 'img-fluid'>
+            </li>
+            <li class="list-group-item">
+             <img src="" class = 'img-fluid'>
+            </li>
+            <li class="list-group-item">
+             <img src="" class = 'img-fluid'>
+            </li>
+            <li class="list-group-item">
+             <img src="" class = 'img-fluid'>
+            </li>
+            <li class="list-group-item">
+             <img src="" class = 'img-fluid'>
+            </li>
+            <li class="list-group-item">
+             <img src="" class = 'img-fluid'>
+            </li>
+            <li class="list-group-item">
+             <img src="" class = 'img-fluid'>
+            </li>
+            <li class="list-group-item">
+             <img src="" class = 'img-fluid'>
+            </li>
+          </ul>
+        </div>
+
+          <div class="col">
+            <table class="table table-borderless">
+            <tbody>
+            <tr>
+            <th scope="row" ><img src="Images/greyTile.png" class = 'img-fluid' id = 'sideOrder1'></th>
+            <td><img src="Images/greyTile.png" class = 'img-fluid' id = 'sideOrder2'></td>
+            </tr>
+            </tbody>
+            </table>
+
+            <div><img src ='Images/Bahu/1.png' class = 'img-fluid' id = "faceTile" ></div>
+          </div>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <table class="table table-borderless">
+          <tbody>
+          <tr>
+          <th scope="row" id = '1'><img src="Images/lettuce.png" class = 'img-fluid'></th>
+          <td id = '2'><img src="Images/cheesePic.png" class = 'img-fluid'></td>
+
+          </tr>
+          <tr>
+          <th scope="row" id = '3'><img src="Images/greyTile.png" class = 'img-fluid'></th>
+          <td id = '4'><img src="Images/greyTile.png" class = 'img-fluid'></td>
+
+          </tr>
+
+          </tbody>
+          </table>
+        </div>
+
+        <div class="col" id = 'grill'>
+          <table class="table table-borderless">
+          <tbody>
+          <tr>
+          <th scope="row" id = '5'><img src="Images/greyTile.png" class = 'img-fluid'></th>
+          <td id = '6'><img src="Images/greyTile.png" class = 'img-fluid'></td>
+          </tr>
+          <tr>
+          <th scope="row" id = '7'><img src="Images/greyTile.png" class = 'img-fluid'></th>
+          <td id = '8'><img src="Images/greyTile.png" class = 'img-fluid'></td>
+          </tr>
+          </tbody>
+          </table>
+          </div>
+
+        <div class="col">
+          <div class="container" >
+          <div class="row ">
+            <div class="col" id = 'nine'>
+                <img src="Images/greyTile.png" class = 'img-fluid empty' id = '9'>
+            </div>
+            <div class="col" id = 'ten'>
+              <img src="Images/greyTile.png" class = 'img-fluid empty' id = '10'>
+            </div>
+        </div>
+      </div>
+      <div><img src ='Images/greyTile.png' class = 'img-fluid'id ='blankSpace' ></div>
+    </div>
+    <div class="container">
+    <div class="row whiteBar">
+      <div class="col-sm">
+        <button id = "submitButton">Submit Burger</button>
+      </div>
+      <div class="col-sm">
+        <button id = "pattyButton">Cook Patties</button>
+      </div>
+      <div class="col-sm">
+        <button id = "friesButton">Fry Fries</button><button id = "makeDrink">Pour Drink</button>
+      </div>
+    </div>
+  </div>
+
+<script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+<script src="app.js"></script>
+  </body>
+</html>
