@@ -25,7 +25,7 @@ let layerCount = 1;
 let totalOrder = 0;
 let sideOrder = [];
 let timer = 0;
-let interval;
+var interval;
 
 
 // var customer = {orderStack:['patty','cheese','lettuce']};
@@ -119,6 +119,7 @@ const ranNum = (min,max,roundValue) => {
 //
 
 function generateOrder ()  {
+
   roundDifficulty();
   orderStack = ['burgerBottom','burgerTop'];
   for (i=1;i<layerCount+1;i++){
@@ -132,6 +133,7 @@ function generateOrder ()  {
   $('#faceTile').attr('src',faceArray[ranNum(0,5,0)]);
    updateData();
   timer = 12;
+   clearInterval(interval);
    interval = setInterval(timeUp,1000);
 }
 
@@ -341,6 +343,7 @@ function giveFries () {
      } else {
         myStack = ['burgerBottom','burgerTop'];
         wrongOrders++;
+
         roundDifficulty();
          generateOrder();
         updateData();
@@ -395,8 +398,9 @@ function timeUp () {
      timer--;
      $('#Timer').text('Time Left = ' + timer);
    } else {
+
      wrongOrders++;
-     clearInterval(interval);
+
      generateOrder();
    }
   // for (i=0;i<=timer;i++){
@@ -413,6 +417,7 @@ function youLose () {
 function checkWin () {
 
   if ((sideOrder[0] === '') && (sideOrder[1] === '') &&  (orderStack.length === 0) ){
+
     correctOrders++;
     roundDifficulty();
     generateOrder();
