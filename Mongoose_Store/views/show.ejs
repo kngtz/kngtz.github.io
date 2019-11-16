@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>
+    <h1>good Show Page</h1>
+    The <%=good.name;%> costs $<%=good.price; %> each. <% if(good.qty > 0){ %>
+    Remaining stock = <%= good.qty %> <% } else { %> Out of stock <% } %>
+
+    <form form action="/goods/<%=good.id; %>?_method=DELETE" method="POST">
+      <input type="submit" value="DELETE" />
+    </form>
+
+    <% if (good.qty > 0) {%>
+    <form action="/goods/<%=good.id%>/buy?_method=put" method="POST">
+      <button class="buy-button">Buy</button>
+    </form>
+    <%}%>
+
+    <a href="/goods/<%=good.id; %>/edit">Edit</a>
+
+    <nav>
+      <a href="/goods">Back to goods Index</a>
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+  </head>
+  <body>
+    <h1>goods index page</h1>
+    <nav>
+      <a href="/goods/new">Create a New good</a>
+    </nav>
+    <ul>
+      <% for(let i = 0; i < goods.length; i++){ %>
+      <li>
+        The
+        <a href="/goods/<%=goods[i].id;%>">
+          <%=goods[i].name; %>
+        </a>
+        costs $<%=goods[i].price; %> each. <% if(goods[i].qty > 0){ %> Remaining
+        stock = <%= goods[i].qty %> <% } else { %> Out of stock <% } %>
+      </li>
+      <% } %>
+    </ul>
+  </body>
+</html>
